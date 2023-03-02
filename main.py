@@ -35,18 +35,17 @@ def main():
     messages = INITIAL_MESSAGES
 
     while True:
-        print("入力: ")
+        print("\033[31m" + "入力: " + "\033[0m")
         text = input()
         messages.append({"role": "user", "content": text})
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=messages,
         )
-        print("偽ずんだもん: ")
+        print("\033[32m" + "偽ずんだもん: " + "\033[0m")
         response_message = response["choices"][0]["message"]["content"]
         print(response_message)
         messages.append({"role": "assistant", "content": response_message})
-        print("****")
 
 
 if __name__ == "__main__":
