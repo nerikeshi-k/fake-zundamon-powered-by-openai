@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "openai-playground"
+name = "fake-zundamon-powered-by-openai"
 version = "0.1.0"
 description = ""
 authors = ["nerikeshi-k <nerikeshik@gmail.com>"]
 readme = "README.md"
-packages = [{include = "openai_playground"}]
+packages = [{include = "fake-zundamon-powered-by-openai"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
